@@ -7,7 +7,7 @@ function App() {
   const [allUsers, setAllUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("/api")
+    axios.get("https://test-api-s0ep.onrender.com/api")
       .then(function (response) {
         setAllUsers(response.data);
       })
